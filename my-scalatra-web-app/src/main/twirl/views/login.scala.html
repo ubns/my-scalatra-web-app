@@ -1,0 +1,8 @@
+@()
+@layouts.html.default("Login Page","ログイン") {
+  <form action="/login" method="post">
+    <input type="text" name="id" />
+    <input type="password" name="pass" />
+    <input type="submit" value="送信" />
+  </form>
+}
