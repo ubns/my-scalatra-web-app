@@ -9,9 +9,10 @@ class AuthServlet extends ScalatraServlet {
   }
 
   post("/") {
-    val id = params.get("id")
-    val pass = params.get("pass")
-    views.html.admin()
+    val id = params("id")
+    val pass = params("pass")
+    println(id)
+    views.html.admin(id)
   }
 
 }
