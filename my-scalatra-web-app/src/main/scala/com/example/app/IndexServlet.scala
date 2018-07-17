@@ -4,7 +4,7 @@ import org.scalatra._
 
 class IndexServlet extends ScalatraServlet {
 
-  get("/login") {
+  get("/") {
     views.html.login()
   }
 }
