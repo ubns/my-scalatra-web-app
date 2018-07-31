@@ -3,7 +3,7 @@ package com.example.app
 import org.scalatra._
 
 class AuthServlet extends ScalatraServlet {
-
+  // form画面へ遷移
   get("/") {
     views.html.login()
   }
